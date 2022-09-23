@@ -1,6 +1,7 @@
-package com.ssafy.mmbot.config
+package com.ssafy.mmbot.vo
 
-data class MattermostMessage(
+data class MsgWithPreTextVO(
+    val pretext: String,
     val color: String,
     val author_name: String,
     val author_icon: String,
