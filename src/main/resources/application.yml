@@ -1,0 +1,3 @@
+notification:
+  mattermost:
+    webhook-url: "Your WebHook URL HERE"
