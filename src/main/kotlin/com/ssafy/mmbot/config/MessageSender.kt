@@ -6,6 +6,7 @@ import org.springframework.http.HttpEntity
 import org.springframework.http.HttpHeaders
 import org.springframework.http.MediaType
 import org.springframework.stereotype.Component
+import org.springframework.web.client.RestTemplate
 import java.lang.Exception
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
@@ -42,13 +43,12 @@ class MessageSender {
         try {
             val messageInfo = MessageInfo(preText, color, authorName, authorIcon, authorLink, title, text, imageUrl, footer)
             val payload = messageInfo.makeJson(isHere)
-            log.info(webhookUrl)
 
             val headers = HttpHeaders()
             headers.set("Content-type", MediaType.APPLICATION_JSON_VALUE)
 
             val entity: HttpEntity<String> = HttpEntity(payload, headers)
-//            RestTemplate().postForEntity(webhookUrl, entity, String::class.java)
+            RestTemplate().postForEntity(webhookUrl, entity, String::class.java)
         } catch (e: Exception) {
             log.error(e.message)
             log.error("==================== ERROR : MattermostSender.sendMessage ====================")
