@@ -3,10 +3,13 @@
 코틀린 스프링을 활용해서 만든 스케줄링 알림 MMBot
 
 ![mm](https://img.shields.io/badge/Mattermost-0058CC?style=for-the-badge&logo=Mattermost&logoColor=white)
-![spring](https://img.shields.io/badge/Spring_Boot-F2F4F9?style=for-the-badge&logo=spring-boot)
-![kotlin](https://img.shields.io/badge/Kotlin-0095D5?&style=for-the-badge&logo=kotlin&logoColor=white)
 ![docker](https://img.shields.io/badge/Docker-2CA5E0?style=for-the-badge&logo=docker&logoColor=white)
+
+![spring](https://img.shields.io/badge/Spring%20Boot-2.7.3-green?style=flat&logo=Spring-Boot)
+![java](https://img.shields.io/badge/openjdk-17.0.4.1-orange?style=flat&logo=OpenJdk)
+![kotlin](https://img.shields.io/badge/Kotlin-1.6-blue?style=flat&logo=Kotlin)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 
 ---
 
@@ -79,12 +82,6 @@ fun entrance() {
 
 
 ### ⛏ 프로젝트 빌드하기
-- Spring Boot
-  - 2.7.3
-- Java
-  - Java17 (openjdk 17.0.4.1 2022-08-12 LTS)
-- Gradle
-  - gradle-7.5-bin
 
 ```shell
 ./gradlew build
@@ -93,7 +90,7 @@ fun entrance() {
 ---
 
 ### 🖥 프로젝트 서버에 배포하기
-1. 로컬에서 [빌드](#프로젝트-빌드하기) 후 /build/libs/*.jar 파일 생성 여부 확인
+1. 로컬에서 [빌드](#-프로젝트-빌드하기) 후 /build/libs/*.jar 파일 생성 여부 확인
 2. 확인 후 로컬에서 도커라이징 진행
 ```shell
 docker build -t mmbot:0.1 .
