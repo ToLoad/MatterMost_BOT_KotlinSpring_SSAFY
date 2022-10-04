@@ -31,8 +31,10 @@ dependencies {
 	annotationProcessor("org.projectlombok:lombok")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 
-	// Gson
+	// Add
 	implementation("com.google.code.gson:gson:2.9.1")
+	implementation("org.springframework.boot:spring-boot-starter-webflux:2.7.3")
+
 }
 
 tasks.withType<KotlinCompile> {
