@@ -12,8 +12,9 @@ import java.time.format.DateTimeFormatter
 @Component
 class ScheduledTasks {
     @Autowired
-    private lateinit var messageSender: MessageSender
     private lateinit var imageUrlVO: ImageUrlVO
+    @Autowired
+    private lateinit var messageSender: MessageSender
 
     private val log = LoggerFactory.getLogger(javaClass)
     private val dataFormat = LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm"))

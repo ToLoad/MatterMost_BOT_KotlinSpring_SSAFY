@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.RestController
 class TestController {
     @Autowired
     private lateinit var imageUrlVO: ImageUrlVO
+    @Autowired
     private lateinit var messageSender: MessageSender
 
     @GetMapping("/")
