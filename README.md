@@ -1,6 +1,7 @@
-# MMBot_KotlinSpring
+# MatterMost BOT /w KotlinSpring
 
-코틀린 스프링을 활용해서 만든 스케줄링 알림 MMBot
+This is Scheduler built with KotlinSpring.
+I made it because I wanted someone to tell me the schedule when I was taking SSAFY(Programming Education).
 
 ![mm](https://img.shields.io/badge/Mattermost-0058CC?style=for-the-badge&logo=Mattermost&logoColor=white)
 ![docker](https://img.shields.io/badge/Docker-2CA5E0?style=for-the-badge&logo=docker&logoColor=white)
@@ -12,7 +13,7 @@
 
 
 ---
-
+## Guide in KR
 ### 📜 MatterMost Webhook URL 발급
 
 통합으로 진입 후 **Incoming webhook 추가하기** 클릭
