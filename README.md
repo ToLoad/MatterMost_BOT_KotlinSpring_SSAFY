@@ -1,6 +1,7 @@
 # MatterMost BOT /w KotlinSpring
 
 This is Scheduler built with KotlinSpring.
+
 I made it because I wanted someone to tell me the schedule when I was taking SSAFY(Programming Education).
 
 ![mm](https://img.shields.io/badge/Mattermost-0058CC?style=for-the-badge&logo=Mattermost&logoColor=white)
